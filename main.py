@@ -14,4 +14,4 @@ async def on_message(message):
     if message.content == ">ping":
         await message.channel.send("Pong.")
 
-bot.run(os.environ.get('token'))
+bot.run(os.environ.get('token', 'xx'))
